@@ -63,18 +63,6 @@ public class StringDuplicateDeleterTest {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testRemoveDuplicates0() {
         String[] input = new String[]{"aa", "aa", "aa", "aa", "aa", "ab", "ba", "ba", "ba", "ba", "bb", "bb", "bb", "bb", "bb"};
@@ -113,25 +101,6 @@ public class StringDuplicateDeleterTest {
         String[] actual = deleter.removeDuplicates(3);
         TestUtils.assertArrayEquality(expected, actual);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     @Test
     public void testRemoveDuplicatesExactlyIdempotence() {
